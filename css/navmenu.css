@@ -1,0 +1,92 @@
+@charset "UTF-8";
+/* color: #FE5200; */
+
+/* 로그인 구역(login.html) */
+.login-content #login-wrap {
+    padding: 50px 0;
+    margin: 0 auto;
+    width: 280px;
+    text-align: center;
+    color: #333;
+}
+.login-content #login-wrap > div > i {
+    font-size: 100px; color: #888;
+}
+.login-content #login-wrap .idpw-box > input {
+    width: 100%; margin: 15px 0;
+    padding-left: 2em;
+}
+.login-content #login-wrap .idpw-box > input,
+.login-content #login-wrap button {
+    height: 40px;
+    border-radius: 50px;
+    box-shadow: 5px 5px 5px#ccc;
+    background: rgba(254,82,0,0.6);
+}
+.login-content #login-wrap button { 
+    width: 50%; color: #fff;
+    margin: 10px 0;
+}
+.login-content #login-wrap .remember-id-box { text-align: left;}
+.login-content #login-wrap .remember-id-box > label { font-size: 15px; color: #888;}
+.login-content #login-wrap .remember-id-box > input {
+    vertical-align: middle; margin-left: 3px;
+}
+.login-content #login-wrap .find-info a {
+    display: block;
+    text-align: left;
+    font-size: 14px; padding: 5px 0;
+}
+.login-content #login-wrap .find-info a i {
+    padding: 0 3px;
+}
+
+/* 탑승장소 구역(map.html) */
+.map-content #map-wrap ul {
+    padding: 20px 10px;
+}
+.map-content #map-wrap ul li {
+    padding: 10px 0; margin: 10px 0;
+    border-bottom: 2px solid #FE5200;
+}
+.map-content #map-wrap ul li:last-child { border: none;}
+.map-content #map-wrap ul li h3 {
+    font-size: 30px; 
+    font-family: 'Do Hyeon', sans-serif;
+    font-weight: normal;
+}
+.map-content #map-wrap ul li h4,
+.map-content #map-wrap ul li strong {
+    font-weight: bold; color: #FE5200;
+}
+.map-content #map-wrap iframe {
+    display: block; width: 100%; height: 250px; 
+    margin-bottom: 10px;
+}
+.map-content #map-wrap ul li h4,
+.map-content #map-wrap ul li p { margin: 5px 0;}
+
+/* 공지사항 구역(notice.html) */
+.notice-content #notice-wrap {
+    padding: 20px 10px;
+}
+.notice-content #notice-wrap li {
+    margin: 10px 0; padding: 10px 5px 20px;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+}
+.notice-content #notice-wrap li strong {
+    font-weight: bold; color: #FE5200;
+    font-size: 18px;
+}
+.notice-content #notice-wrap li p {
+    font-size: 14px; color: #666;
+}
+.notice-content #notice-wrap li i {
+    font-size: 20px; color: #666;
+    position: absolute;
+    top: 50%; right: 20px;
+    transform: translateY(-50%);
+}
+
+/* 투어예약 구역(tourReserve.html) */

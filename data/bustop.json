@@ -1,0 +1,46 @@
+{
+    "busstop": [
+        {
+            "name": "동탄역(SRT)",
+            "address": "경기 화성시 동탄6동",
+            "place": "동탄역 2번 출구 앞 버스정류장",
+            "parking": "동탄역 지하 주차장 이용",
+            "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3178.0378147044885!2d127.09482901558098!3d37.19933125282929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b45c77d2e0761%3A0xac888832ffeaf216!2z64-Z7YOE7Jet!5e0!3m2!1sko!2skr!4v1603865829725!5m2!1sko!2skr"
+        },
+        {
+            "name": "동탄",
+            "address": "경기 화성시 반송동 노작로 158",
+            "place": "화성시미디어센터 앞 버스정류장",
+            "parking": "반석산 에코스쿨 주차장",
+            "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3177.8957144719257!2d127.07198341558092!3d37.20270635263742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b4430ce3424e1%3A0x15b7064e75d712fa!2z7ZmU7ISx7IucIOuvuOuUlOyWtOyEvO2EsA!5e0!3m2!1sko!2skr!4v1603865937312!5m2!1sko!2skr"
+        },
+        {
+            "name": "병점",
+            "address": "경기 화성시 진안동",
+            "place": "병점 동부출장소 앞 버스정류장",
+            "parking": "동부출장소 내 주차장(대중교통을 추천)",
+            "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3177.6412150444953!2d127.033701915581!3d37.20875045229419!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b43f940efc811%3A0xc17bd01ad7a08c82!2z64-Z67aA7Lac7J6l7IaM!5e0!3m2!1sko!2skr!4v1603866032447!5m2!1sko!2skr"
+        },
+        {
+            "name": "봉담",
+            "address": "경기 화성시 봉담읍 상리",
+            "place": "봉담읍사무소 육교 건너편 버스정류장",
+            "parking": "봉담읍 행정복지센터 주차장(시티투어 승차장까지는 약 200m)",
+            "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3177.1675383374286!2d126.94726551558124!3d37.21999755165497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b6a0be5f5dc3d%3A0x897b3fbacf6ad2f!2z67SJ64u07J2N7IKs66y07IaM!5e0!3m2!1sko!2skr!4v1603866090589!5m2!1sko!2skr"
+        },
+        {
+            "name": "향남",
+            "address": "경기 화성시 향남읍 행정리",
+            "place": "향남읍사무소 앞 버스정류장",
+            "parking": "향남읍 행정복지센터 주차장 이용(주말에는 무료 이용)",
+            "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3180.8536685798126!2d126.91813231557961!3d37.13239625662839!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b15a840fc35c5%3A0x7ef887c6c1d97f5!2z7Zal64Ko7J2N7IKs66y07IaM!5e0!3m2!1sko!2skr!4v1603866112546!5m2!1sko!2skr"
+        },
+        {
+            "name": "남양",
+            "address": "경기 화성시 남양읍 남양리 2147",
+            "place": "모두누림센터 앞 버스정류장",
+            "parking": "모두누림센터 주차장",
+            "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3178.048617761365!2d126.82782291558094!3d37.199074652843905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b13296583e38f%3A0xc433d5fb9946f8be!2z7ZmU7ISxIOuqqOuRkOuIhOumvOyEvO2EsA!5e0!3m2!1sko!2skr!4v1603866133696!5m2!1sko!2skr"
+        }
+    ]
+}

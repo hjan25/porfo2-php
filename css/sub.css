@@ -1,0 +1,258 @@
+@charset "UTF-8";
+/* color: #FE5200; */
+
+/* 로그인 구역(login.html) */
+.login-content #login-wrap {
+    padding: 50px 0;
+    margin: 0 auto;
+    width: 280px;
+    text-align: center;
+    color: #333;
+}
+.login-content #login-wrap > div > i {
+    font-size: 100px; color: #888;
+}
+.login-content #login-wrap .idpw-box > input {
+    width: 100%; margin: 15px 0;
+    padding-left: 2em;
+}
+.login-content #login-wrap .idpw-box > input,
+.login-content #login-wrap button {
+    height: 40px;
+    border-radius: 50px;
+    box-shadow: 5px 5px 5px#ccc;
+    background: rgba(254,82,0,0.6);
+}
+.login-content #login-wrap button { 
+    width: 50%; color: #fff;
+    margin: 10px 0;
+}
+.login-content #login-wrap .remember-id-box { text-align: left;}
+.login-content #login-wrap .remember-id-box > label { font-size: 15px; color: #888;}
+.login-content #login-wrap .remember-id-box > input {
+    vertical-align: middle; margin-left: 3px;
+}
+.login-content #login-wrap .find-info a {
+    display: block;
+    text-align: left;
+    font-size: 14px; padding: 5px 0;
+}
+.login-content #login-wrap .find-info a i {
+    padding: 0 3px;
+}
+
+/* 회원가입 폼(join.html) */
+.join-content #join-wrap { 
+    padding: 50px 0;
+    margin: 0 auto;
+    width: 300px;
+    text-align: center;
+    color: #333;
+}
+.join-content .join-box { text-align: center;}
+.join-content .join-box p { margin: 20px; }
+.join-content .join-box label {
+    display: inline-block; height: 30px;
+    font-size: 17px; font-weight: bold;
+}
+.join-content .join-box input {
+    width: 100%; height: 40px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px#ccc;
+    background: #fff;
+    padding-left: 1em;
+}
+.join-content .join-box button {
+    height: 40px;
+    border-radius: 50px;
+    box-shadow: 5px 5px 5px#ccc;
+    background: rgba(254,82,0,0.6);
+    width: 48%; color: #fff;
+    margin: 10px 0;
+}
+.join-content .join-box input + span {
+    font-size: 14px; color: red; 
+    margin-top: 5px;
+    display: none;
+}
+.join-content .join-box input:focus+span{ display: block;}
+
+/* 탑승장소 구역(map.html) */
+.map-content #map-wrap ul {
+    padding: 20px 10px;
+}
+.map-content #map-wrap ul li {
+    padding: 10px 0; margin: 10px 0;
+    border-bottom: 2px solid #FE5200;
+}
+.map-content #map-wrap ul li:last-child { border: none;}
+.map-content #map-wrap ul li h3 {
+    font-size: 30px; 
+    font-family: 'Do Hyeon', sans-serif;
+    font-weight: normal;
+}
+.map-content #map-wrap ul li h4,
+.map-content #map-wrap ul li strong {
+    font-weight: bold; color: #FE5200;
+}
+.map-content #map-wrap iframe {
+    display: block; width: 100%; height: 250px; 
+    margin-bottom: 10px;
+}
+.map-content #map-wrap ul li h4,
+.map-content #map-wrap ul li p { margin: 5px 0;}
+
+/* 공지사항 구역(notice.html) */
+.notice-content #notice-wrap {
+    padding: 20px 10px;
+}
+.notice-content #notice-wrap li {
+    margin: 10px 0; padding: 10px 5px 20px;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+}
+.notice-content #notice-wrap li strong {
+    font-weight: bold; color: #FE5200;
+    font-size: 18px;
+}
+.notice-content #notice-wrap li p {
+    font-size: 14px; color: #666;
+}
+.notice-content #notice-wrap li i {
+    font-size: 20px; color: #666;
+    position: absolute;
+    top: 50%; right: 20px;
+    transform: translateY(-50%);
+}
+
+/* 투어소개 구역(tourintro.html) */
+.tourintro-content #tour-intro-wrap {
+    padding: 20px 10px;
+}
+.tourintro-content #tour-intro-wrap .intro-text {
+    font-size: 21px; text-align: center;
+}
+.tourintro-content #tour-intro-wrap .intro-text i { color: #FE5200;}
+
+.tourintro-content #tour-intro-wrap .tour-value {
+    margin: 30px 0 10px; text-align: center;
+}
+.tourintro-content #tour-intro-wrap .tour-value h3 {
+    font-size: 25px; font-family: 'Do Hyeon', sans-serif;
+    margin-bottom: 30px;
+}
+.tourintro-content #tour-intro-wrap .tour-value li {
+    margin: 10px 0;
+}
+.tourintro-content #tour-intro-wrap .tour-value strong {
+    display: block; font-weight: bold;
+}
+.tourintro-content #tour-intro-wrap .tour-value p > i {
+    color: #FE5200;
+}
+
+/* 투어예약 폼(tourReserve.html) */
+.tourreserve-content #tour-reserve-wrap {
+    padding: 30px 10px 20px; text-align: center;
+    color: #333;
+}
+.tourreserve-content #tour-reserve-wrap strong{
+    font-size: 25px; font-family: 'Do Hyeon', sans-serif;
+    color: #FE5200;
+}
+.tourreserve-content .reserve-form { 
+    margin: 30px auto 0;
+    min-width: 280px;
+}
+.tourreserve-content .reserve-form label,
+.tourreserve-content .reserve-form input,
+.tourreserve-content .reserve-form select {
+    display: block; width: 100%;
+    height: 50px; 
+}
+.tourreserve-content .reserve-form label {
+    font-weight: bold;
+    font-size: 20px; height: 30px;
+}
+.tourreserve-content .reserve-form input,
+.tourreserve-content .reserve-form select {
+    padding-left: 1em; margin: 10px 0 30px;
+    border-radius: 5px; background: #fff;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+}
+.tourreserve-content .reserve-form select { border: none;}
+.tourreserve-content .reserve-form #how-many {
+    width: 40%; display: inline-block;
+    margin-right: 10px;
+}
+.tourreserve-content .reserve-form .pmbtn { display: inline-block;}
+.tourreserve-content .reserve-form .pmbtn > a {
+    color: rgba(254,82,0,0.8); font-size: 40px; vertical-align: middle;
+    margin: 0 5px;
+}
+.tourreserve-content .reserve-form input:disabled {
+    background: #ddd;
+}
+.btn button {
+    font-size: 17px; font-weight: bold;
+    background: rgba(254,82,0,0.6);
+    border-radius: 5px; 
+    width: 40%;
+    padding: 10px 0; margin: 0 10px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+}
+
+/* 예약조회 구역(checkReserve.html) */
+.checkReserve-content #checkReserve-wrap {
+    padding: 20px 10px; text-align: center;
+}
+.checkReserve-content #checkReserve-wrap h3 { font-size: 30px;}
+#checkReserve-wrap form { 
+    margin: 30px auto 0;
+    min-width: 280px;
+}
+#checkReserve-wrap form label,
+#checkReserve-wrap form input {
+    width: 100%; height: 50px; 
+}
+#checkReserve-wrap form label {
+    font-weight: bold;
+    font-size: 20px;
+}
+#checkReserve-wrap form input {
+    padding-left: 1em;
+    margin: 10px 0 30px;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+}
+
+/* 이용약관(tos.html) */
+.tos-content #tos-wrap { padding: 20px 10px;}
+.tos-content #tos-wrap .b-tit { 
+    font-size: 18px; font-weight: bold;
+    margin: 20px 0 10px;
+}
+.tos-content #tos-wrap .s-tit { 
+    cursor: pointer;
+    font-weight: bold; color: #fff; background:rgba(254,82,0,0.8); 
+    padding: 5px 10px; margin: 10px 0; border-radius: 5px;
+}
+.tos-content #tos-wrap .s-con { 
+    background: #fff; padding: 15px 10px;
+    border-radius: 5px; font-size: 15px;
+    display: none;
+}
+.tos-content #tos-wrap .s-con.on { display: block;}
+.boochick, .boochick+p { font-size: 15px; font-weight: bold;}
+
+/* 개인정보처리방침(privacy.html) */
+.privacy-content #privacy-wrap { padding: 20px 10px; font-size: 15px;}
+.privacy-content #privacy-wrap h3 { font-size: 17px; margin-bottom: 10px;}
+
+/* 이메일무단수집거부(rec.html) */
+.rec-content #rec-wrap { padding: 20px 10px;}
+.rec-content #rec-wrap h3 { font-size: 17px; margin-bottom: 10px;}
+.rec-content #rec-wrap .b-tit { font-size: 17px; font-weight: bold; margin: 10px 0;}
+.rec-content #rec-wrap .s-tit { font-weight: bold; margin: 10px 0;}
+.rec-content #rec-wrap .s-con { font-size: 15px; }

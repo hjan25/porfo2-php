@@ -1,0 +1,36 @@
+<section id="container">
+    <div id="content" class="login-content">
+        <div class="cont-tit">
+            <div class="prev">
+                <a href="index.php"><i class="fas fa-arrow-left"></i><span class="blind">이전 페이지</span></a>
+            </div>
+            <h2>로그인</h2>
+        </div>
+        <div id="login-wrap">
+            <div>
+                <i class="fas fa-user-circle"></i>
+            </div>
+            <div class="login-box">
+                <form name="login_form" action="login.php" method="POST">
+                    <fieldset>
+                        <legend>로그인</legend>
+                        <div class="idpw-box">
+                            <input type="text" name="id" id="idbox" required placeholder="User Id">
+                            <input type="password" name="pass" id="pwbox" required placeholder="Password">
+                        </div>
+                        <div class="remember-id-box">
+                            <label for="rememberid">아이디 저장</label>
+                            <input type="checkbox" name="rememberid" id="rememberid">
+                        </div>
+                        <button type="button" onclick="login_check()">로그인</button>
+                    </fieldset>
+                </form>
+                <div class="find-info">
+                    <a href="#">아이디 찾기<i class="fas fa-angle-right"></i></a>
+                    <a href="#">비밀번호 찾기<i class="fas fa-angle-right"></i></a>
+                    <a href="#">회원가입<i class="fas fa-angle-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
