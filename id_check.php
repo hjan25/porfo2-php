@@ -26,8 +26,18 @@
         if ( $num_record ) {
             echo "<p>".$id."는 사용이 불가능한 아이디입니다.</p>";
             echo "<p>다른 아이디를 사용해 주세요.</p>";
+            echo "
+                <script>
+                    window.opener.document.getElementById('joinform').classList.remove('on');
+                </script>
+            ";
         } else {
             echo "<p>".$id."는 사용이 가능한 아이디입니다.</p>";
+            echo "
+                <script>
+                    window.opener.document.getElementById('joinform').classList.add('on');
+                </script>
+            ";
         }
         mysqli_close($con);
     }

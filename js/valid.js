@@ -116,7 +116,17 @@ function join_check() {
         document.join_form.pass.focus();
         return false;
     }
+    var eljoinform = document.getElementById('joinform');
+    if ( !eljoinform.classList.contains('on') ) {
+        alert ('아이디 중복체크를 해주세요.');
+        return false;
+    }
     document.join_form.submit();
+}
+
+// 조인폼 취소버튼 누르면 #joinform의 class 'on' 삭제
+function remove_check() {
+    document.getElementById('joinform').classList.remove('on');
 }
 
 // 아이디 중복체크버튼

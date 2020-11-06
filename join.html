@@ -8,7 +8,7 @@
         </div>
         <div id="join-wrap">
             <div class="join-box">
-                <form name="join_form" action="join_insert.php" method="POST">
+                <form name="join_form" id="joinform" action="join_insert.php" method="POST">
                     <fieldset>
                         <legend>회원가입</legend>
                         <p>
@@ -47,7 +47,7 @@
                             <span>-를 포함해 번호 입력</span>
                         </p>
                         <button type="button" onclick="join_check()">가입</button>
-                        <button type="reset">취소</button>
+                        <button type="reset" onclick="remove_check()" id="joinreset">취소</button>
                     </fieldset>
                 </form>
             </div>
