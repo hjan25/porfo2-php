@@ -18,7 +18,6 @@
         session_start();
         if ( isset($_SESSION['userid']) ) {
             $userid = $_SESSION['userid'];
-            $username = $_SESSION['username'];
         } else {
             $userid = '';
         }
@@ -28,7 +27,7 @@
             <div class="row">
                 <div class="logo">
                     <a href="index.php">
-                        <img src="images/logo.svg"alt="놀러화요 로고">
+                        <img src="images/logo.svg" alt="놀러화요 로고">
                     </a>
                 </div>
                 <div id="open-gnb" class="gnb">
@@ -72,7 +71,7 @@
                                     <a href="join.html">회원가입</a>
                                 </div>
                             <?php } else { ?>
-                                <div class="welcome"><?php echo ($username); ?>님 환영합니다.</div>
+                                <div class="welcome"><?php echo ($userid); ?>님 환영합니다.</div>
                                 <div class="logout-btn inbtn">
                                     <a href="logout.php">로그아웃</a>
                                 </div>
@@ -184,7 +183,7 @@
     </div>
 
     <div id="only-mobile">
-        <img src="images/logo.svg" alt="로고"  width="500px">
+        <img src="images/logo.svg" alt="로고"  width="400px">
         <p>이 사이트는 768px 이하에서만 보입니다.</p>
     </div>
 

@@ -10,7 +10,7 @@
     position: fixed; top: 0; left: 0; bottom: 0; right: 0;
     background: #EEC269; z-index: 999999999999;
     display: flex; align-items: center; justify-content: center; flex-direction: column;
-    font-size: 40px; font-weight: bold;
+    font-size: 30px; font-weight: bold;
 }
 @media screen and (max-width: 768px) {
     #only-mobile { display: none;}
@@ -107,7 +107,6 @@
     transform: rotate(-45deg);
     position: absolute; top: 10px; left: 0;
 }
-/* nav-wrap style */
 #nav-wrap .member .welcome {color: #333; margin: 10px 0;}
 #nav-wrap .member .inbtn { 
     background: #FE5200; padding: 10px 0; 

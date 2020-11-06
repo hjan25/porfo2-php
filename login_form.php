@@ -18,7 +18,6 @@
         session_start();
         if ( isset($_SESSION['userid']) ) {
             $userid = $_SESSION['userid'];
-            $username = $_SESSION['username'];
         } else {
             $userid = '';
         }
@@ -125,10 +124,6 @@
                                 <div class="idpw-box">
                                     <input type="text" name="id" id="idbox" required placeholder="User Id">
                                     <input type="password" name="pass" id="pwbox" required placeholder="Password">
-                                </div>
-                                <div class="remember-id-box">
-                                    <label for="rememberid">아이디 저장</label>
-                                    <input type="checkbox" name="rememberid" id="rememberid">
                                 </div>
                                 <button type="button" onclick="login_check()">로그인</button>
                             </fieldset>

@@ -6,6 +6,7 @@
     <title>아이디 중복 체크</title>
     <style>
         h3, p, #close-btn { text-align: center;}
+        h3 { background: #ccc; padding: 5px;}
         #close-btn button { background: #ccc; border: none; width: 70px; height: 40px;}
     </style>
 </head>
