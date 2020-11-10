@@ -2,7 +2,6 @@
 
     // 키워드 검색 폼
     $('#header .search-box form').on('submit', function(){
-
         return false; // 유효성 체크 후 제거할 것
     });
 
@@ -73,7 +72,6 @@
 
     // 예약 조회 폼
     $('#container').on('submit', '.checkReserve-content form', function(){
-        
         return false; // 유효성 체크 후 제거할 것
     });
 
@@ -81,13 +79,27 @@
 
 // 회원가입 폼 유효성 체크
 function join_check() {
+    var idChk = /^[a-zA-Z0-9]{4,10}$/;
+    var passChk =  /^[A-Za-z0-9]{6,10}$/;
+    var nameChk = /^[가-힣a-zA-z]{1,5}$/;
+    var emailChk = /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i;
+    var phoneChk = /^\d{3}-\d{3,4}-\d{4}$/;
+
     if ( !document.join_form.id.value ) {
         alert('아이디를 입력하세요.');
+        document.join_form.id.focus();
+        return false;
+    } else if ( !idChk.test(document.join_form.id.value)) {
+        alert('아이디는 4~12자의 영문 대소문자와 숫자로만 입력');
         document.join_form.id.focus();
         return false;
     }
     if ( !document.join_form.pass.value ) {
         alert('비밀번호를 입력하세요.');
+        document.join_form.pass.focus();
+        return false;
+    } else if ( !passChk.test(join_form.pass.value)) {
+        alert('비밀번호 형식이 틀립니다.');
         document.join_form.pass.focus();
         return false;
     }
@@ -100,14 +112,26 @@ function join_check() {
         alert('이름을 입력하세요.');
         document.join_form.name.focus();
         return false;
+    } else if ( !nameChk.test(document.join_form.name.value)) {
+        alert('이름이 올바른 형식이 아닙니다.');
+        document.join_form.name.focus();
+        return false;
     }
     if ( !document.join_form.email.value ) {
         alert('이메일 주소를 입력하세요.');
         document.join_form.email.focus();
         return false;
+    } else if ( !emailChk.test(document.join_form.email.value)) {
+        alert('올바른 이메일 형식이 아닙니다.');
+        document.join_form.email.focus();
+        return false;
     }
     if ( !document.join_form.phone.value ) {
         alert('휴대폰번호를 입력하세요.');
+        document.join_form.phone.focus();
+        return false;
+    } else if ( !phoneChk.test(document.join_form.phone.value)) {
+        alert('올바른 휴대폰번호가 아닙니다.');
         document.join_form.phone.focus();
         return false;
     }
