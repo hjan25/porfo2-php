@@ -18,6 +18,9 @@
         session_start();
         if ( isset($_SESSION['userid']) ) {
             $userid = $_SESSION['userid'];
+            $username = $_SESSION['username'];
+            $userphone = $_SESSION['userphone'];
+            $useremail = $_SESSION['useremail'];
         } else {
             $userid = '';
         }
@@ -75,8 +78,8 @@
                                 <div class="logout-btn inbtn">
                                     <a href="logout.php">로그아웃</a>
                                 </div>
-                                <div class="inbtn">
-                                    <a href="#none">마이페이지</a>
+                                <div class="mypage-btn inbtn">
+                                    <a href="mypage.php">마이페이지</a>
                                 </div>
                             <?php } ?>
                         </div>
@@ -106,34 +109,28 @@
         </header>
 
         <section id="container">
-            <div id="content" class="login-content">
+            <div id="content" class="mypage-content">
                 <div class="cont-tit">
                     <div class="prev">
                         <a href="index.php"><i class="fas fa-arrow-left"></i><span class="blind">이전 페이지</span></a>
                     </div>
-                    <h2>로그인</h2>
+                    <h2>마이페이지</h2>
                 </div>
-                <div id="login-wrap">
-                    <div>
+                <div id="mypage-wrap">
+                    <div class="user-info">
                         <i class="fas fa-user-circle"></i>
+                        <p><?php echo ($username); ?></p>
+                        <p><?php echo ($useremail); ?></p>
+                        <p><?php echo ($userphone); ?></p>
                     </div>
-                    <div class="login-box">
-                        <form name="login_form" action="login.php" method="POST">
-                            <fieldset>
-                                <legend>로그인</legend>
-                                <div class="idpw-box">
-                                    <input type="text" name="id" id="idbox" required placeholder="User Id">
-                                    <input type="password" name="pass" id="pwbox" required placeholder="Password">
-                                </div>
-                                <button type="button" onclick="login_check()">로그인</button>
-                            </fieldset>
-                        </form>
-                        <div class="find-info">
-                            <a href="#">아이디 찾기<i class="fas fa-angle-right"></i></a>
-                            <a href="#">비밀번호 찾기<i class="fas fa-angle-right"></i></a>
-                            <a href="#">회원가입<i class="fas fa-angle-right"></i></a>
-                        </div>
-                    </div>
+                    <ul class="mypage-menu">
+                        <li><a href="#"><i class="far fa-edit"></i> <p>프로필 수정</p></a></li>
+                        <li><a href="#"><i class="fas fa-stamp"></i> <p>여행 스탬프</p></a></li>
+                        <li><a href="#"><i class="far fa-calendar-check"></i> <p>내 예약</p></a></li>
+                        <li><a href="#"><i class="far fa-comment"></i> <p>여행 리뷰</p></a></li>
+                        <li><a href="#"><i class="far fa-paper-plane"></i> <p>문의하기</p></a></li>
+                        <li><a href="#"><i class="fas fa-cog"></i> <p>설정</p></a></li>
+                    </ul>
                 </div>
             </div>
         </section>

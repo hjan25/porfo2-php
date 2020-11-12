@@ -75,8 +75,8 @@
                                 <div class="logout-btn inbtn">
                                     <a href="logout.php">로그아웃</a>
                                 </div>
-                                <div class="inbtn">
-                                    <a href="#none">마이페이지</a>
+                                <div class="mypage-btn inbtn">
+                                    <a href="mypage.php">마이페이지</a>
                                 </div>
                             <?php } ?>
                         </div>
@@ -123,7 +123,7 @@
                         <div class="menu03 menu">
                             <a href="checkReserve.html">
                                 <h2>예약 조회</h2>
-                                <i class="fas fa-film"></i>
+                                <i class="far fa-calendar-check"></i>
                             </a>
                         </div>
                     </div>

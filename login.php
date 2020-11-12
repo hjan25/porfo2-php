@@ -34,6 +34,8 @@
             session_start();
             $_SESSION['userid'] = $row['id'];
             $_SESSION['username'] = $row['name'];
+            $_SESSION['userphone'] = $row['phone'];
+            $_SESSION['useremail'] = $row['email'];
             echo ("
                 <script>
                     location.href = 'index.php';
