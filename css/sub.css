@@ -250,3 +250,12 @@
 .rec-content #rec-wrap .b-tit { font-size: 17px; font-weight: bold; margin: 10px 0;}
 .rec-content #rec-wrap .s-tit { font-weight: bold; margin: 10px 0;}
 .rec-content #rec-wrap .s-con { font-size: 15px; }
+
+/* 마이페이지(mypage.php) */
+#mypage-wrap { padding: 20px 10px; text-align: center;}
+#mypage-wrap .user-info > i { font-size: 80px; color: #888; margin-bottom: 20px;}
+#mypage-wrap .user-info > p:nth-of-type(1) { font-weight: bold;}
+#mypage-wrap ul { display: flex; flex-wrap: wrap; margin: 20px 0;}
+#mypage-wrap li { flex:150px; margin: 20px 0;}
+#mypage-wrap li i { font-size: 40px; color:rgba(254,82,0,0.6);}
+#mypage-wrap li p { padding: 10px 0;}

@@ -28,8 +28,8 @@
         return false;
     });
 
-    // 네비박스 메뉴, 로그인, 회원가입 버튼 클릭
-    $('#nav-wrap #nav ul a, .member .join-btn a').on('click', function(){
+    // 네비박스 메뉴, 회원가입 버튼 클릭
+    $('#nav-wrap #nav ul a, .member .join-btn a, .member .mypage-btn a').on('click', function(){
         var url = this.href;
         $('#container > #content').remove();
         $('#container').load(url+' #content');
@@ -164,6 +164,11 @@
         if ($(this).siblings('.s-tit').next('.s-con').hasClass('on')) {
             $(this).siblings('.s-tit').next('.s-con').removeClass('on')
         }
+    });
+
+    // 마이페이지 메뉴, 공지사항 클릭 이벤트 막기
+    $('#container').on('click', '.mypage-menu li a, #notice-wrap ul li a', function(){
+        return false;
     });
     
 })(jQuery)
