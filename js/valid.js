@@ -50,8 +50,12 @@
     $('#container').on('click', '.reserve-form a.minus', function(){
         var howMany = $('#how-many').val();
         howMany--;
-        $('#how-many').val(howMany);
-
+        if ( howMany < 0 ) {
+            return false
+        } else {
+            $('#how-many').val(howMany);
+        }
+        
         // 가격 변화 공통 펑션
         changePrice();
 
